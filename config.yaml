@@ -1,0 +1,22 @@
+
+chunking:
+  chunk_size: 1000
+  chunk_overlap: 200
+
+embedding:
+  provider: huggingface
+  model_name: sentence-transformers/all-MiniLM-L6-v2
+  normalize_embeddings: true
+  device: cpu
+  batch_size: 32
+
+storage:
+  provider: chroma
+  persist_directory: ./chroma_db
+  collection_name: meridian_air
+  distance_metric: cosine
+  batch_size: 100
+  reset_collection: false
+
+metadata:
+  source: airline_case_study.pdf

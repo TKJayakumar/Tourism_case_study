@@ -1,0 +1,10 @@
+docling
+pandas
+pyyaml
+langchain-core
+langchain-text-splitters
+langchain-huggingface
+sentence-transformers
+langchain-chroma
+chromadb
+tabulate
