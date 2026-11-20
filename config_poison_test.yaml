@@ -1,0 +1,25 @@
+
+chunking:
+  chunk_size: 1000
+  chunk_overlap: 200
+
+embedding:
+  provider: huggingface
+  model_name: sentence-transformers/all-MiniLM-L6-v2
+  normalize_embeddings: true
+  device: cpu
+  batch_size: 32
+
+storage:
+  provider: chroma
+  persist_directory: ./chroma_poison_test
+  collection_name: meridian_poison_test
+  distance_metric: cosine
+  batch_size: 100
+  reset_collection: true
+
+metadata:
+  source: poison_test.pdf
+
+processing:
+  full_mode: false

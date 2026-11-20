@@ -1,0 +1,36 @@
+docling
+pandas
+pyyaml
+langchain-core
+langchain-text-splitters
+langchain-huggingface
+sentence-transformers
+langchain-chroma
+chromadb
+tabulate
+rank-bm25
+huggingface_hub
+langchain-classic
+langchain-community
+flashrank>=0.2.10
+langchain-google-genai
+python-dotenv
+
+spacy
+presidio-analyzer
+presidio-anonymizer
+pytesseract
+Pillow
+
+pytest
+
+deepeval
+
+
+# Guardrails
+nemoguardrails
+guardrails-ai
+rich
+# FastAPI service
+fastapi
+uvicorn[standard]
