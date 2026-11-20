@@ -1,0 +1,9 @@
+
+define flow protect passenger privacy
+  $privacy_check = execute check_passenger_privacy
+  if $privacy_check == True
+    bot refuse to respond
+    stop
+
+define bot refuse to respond
+  "I'm sorry, I can't share another passenger's personal or booking information."
